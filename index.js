@@ -13,7 +13,7 @@ var tbody = document.getElementById('tbody');
 // const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/hello';
 const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${wordInput}`;
 const link =`https://api.dictionaryapi.dev/api/v2/entries/en`;
-var wordListLink = 'https://json-server-2-7lu9.onrender.com/words';
+var wordListLink = 'https://nwdd-backend-api.onrender.com/';
 //Get - Read the posts
 //Method: GET
 // fetch(url)
