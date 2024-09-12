@@ -239,6 +239,7 @@ fetch(wordListLink)
             <td>${Object.word}</td>
             <td>${Object.partOfSpeech}</td>
             <td>${Object.definition}</td>
+            <td><button class="save-row-btn" id="saveButton" data-id=${data.id}>Save</td>
             <td><button class="move-row-btn" id="moveButton" data-id=${data.id}>Move</td>
             <td><button class="delete-row-btn" id="deleteButton" data-id=${data.id}>Delete</td>
         </tr>
