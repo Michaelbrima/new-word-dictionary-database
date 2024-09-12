@@ -380,7 +380,7 @@ table.addEventListener('click', (e) => {
     //// For deleting a word (DELETE Request):
     if(delButtonPressed) {
         let pageURL = 'http://127.0.0.1:5500/New%20Word%20Dictionary%20Database.html';
-        let id = e.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
+        let id = e.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
         wordID = e.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
         // let posID = e.target.parentElement.data.partOfSpeech;
         
