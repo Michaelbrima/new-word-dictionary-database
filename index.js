@@ -316,7 +316,8 @@ preTable.addEventListener('click', (e) => {
                 definition: definitionID
             })
             
-          })
+          }).then(res => res.json())
+          .then(() => location.reload())
           
         console.log('The word, its Part of Speech, and its Definition were successfully saved.');
     }
