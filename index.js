@@ -110,7 +110,7 @@ async function wordToRequest() {
         <td id='wordCell'>${data.word}</td>
         <td>${data.meanings[i].partOfSpeech}</td>
         <td>${data.meanings[i].definitions[i].definition}</td>
-        <td><button class="save-row-btn" id="saveButton" data-id=${data.id}>Save</td>
+        <td><button onclick="saveAlert()" class="save-row-btn" id="saveButton" data-id=${data.id}>Save</td>
         <td><button class="move-row-btn" id="moveButton" data-id=${data.id}>Move</td>
         <td><button class="delete-row-btn" id="deleteButton" data-id=${data.id}>Delete</td>
         </tr>
@@ -150,7 +150,7 @@ async function loadHTMLTable(data) {
 //         <td>${enteredData.meanings[i].definitions[i].definition}</td>
 //         <td><button class="save-row-btn" id="saveButton" data-id=${enteredData.id}>Save</td>
 //         <td><button class="move-row-btn" id="moveButton" data-id=${enteredData.id}>Move</td>
-//         <td><button class="delete-row-btn" id="deleteButton" data-id=${enteredData.id}>Delete</td>
+//         <td><button onclick="deleteAlert()" class="delete-row-btn" id="deleteButton" data-id=${data.id}>Delete</td>
 //         </tr>
 //             `;
 //             i++;
@@ -283,6 +283,16 @@ fetch(wordListLink)
 //        table.innerHTML = output;
 
 // };
+
+function saveAlert(){
+        var saveText = "The word, its Part of Speech, and its Definition were successfully saved.";
+        alert(saveText);
+    }
+
+function deleteAlert(){
+    var deleteText = "The word, its Part of Speech, and its Definition were successfully deleted.";
+    alert(deleteText);
+}
 
 preTable.addEventListener('click', (e) => {
     // console.log(e.target.id);
